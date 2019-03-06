@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        android:defaultValue="@bool/checkDef"
+        android:key="@string/switchKey"
+        android:icon="@drawable/ic_close_white_24dp"
+        android:summaryOff="@string/off"
+        android:summaryOn="@string/on"
+        android:title="@string/switchTitle" />
+
+    <androidx.preference.CheckBoxPreference
+        android:defaultValue="@bool/checkDef"
+        android:icon="@drawable/ic_close_white_24dp"
+        android:key="@string/checkboxKey"
+        android:summaryOff="@string/prefSync_summaryOff"
+        android:summaryOn="@string/prefSync_summaryOn"
+        android:title="@string/checkboxTitle"/>
+
+</androidx.preference.PreferenceScreen>

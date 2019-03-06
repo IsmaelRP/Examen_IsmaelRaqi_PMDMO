@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Examen_IsmaelRaqi_PMDMO</string>
+    <string name="book_deleted_successfully">Book deleted successfully!</string>
+    <string name="book_error_deleting">Error deleting book</string>
+    <string name="imgCover_descr">Cover</string>
+    <string name="lblEmptyBooks_text">There aren\'t books yet</string>
+    <string name="lblSheetTitle_text">You have to select a book first</string>
+    <string name="book_inserted_successfully">Book inserted successfully</string>
+    <string name="book_error_inserting">Error inserting book</string>
+    <string name="tilTitle_hint">Title</string>
+    <string name="tilYear_hint">Year of publication</string>
+    <string name="tilsSynopsis_hint">Synopsis</string>
+    <string name="tilAuthor_hint">Author</string>
+    <string name="tilsUrl_hint">URL Cover</string>
+    <string name="save_text">Save book</string>
+    <string name="img_dimenRatio">H,1:2</string>
+    <string name="settingsTitle">Settings</string>
+    <string name="lblSheet_notAvailable"><![CDATA[<Synopsis not available>]]></string>
+    <string name="confirm_dialog_title">Save your book</string>
+    <string name="confirm_dialog_no">No</string>
+    <string name="confirm_dialog_yes">Yes</string>
+    <string name="confirm_dialog_message">Are you sure to save?</string>
+    <string name="switchKey">switchKey</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="switchTitle">Set undo erasing of books</string>
+    <bool name="switchDef">true</bool>
+    <string name="switchDefault">On</string>
+    <string name="checkboxTitle">Set confirm dialog when save books</string>
+    <string name="prefSync_summaryOn">Yes</string>
+    <string name="prefSync_summaryOff">No</string>
+    <string name="checkboxKey">checkboxKey</string>
+    <string name="checkDefault">Yes</string>
+    <string name="book_removed">Book removed successfully!</string>
+    <string name="errorTil">This field can\'t be empty!</string>
+    <bool name="checkDef">true</bool>
+</resources>

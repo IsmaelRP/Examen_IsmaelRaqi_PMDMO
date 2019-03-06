@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:minHeight="@dimen/list_minHeight"
+    android:paddingBottom="@dimen/list_paddingBottom">
+
+    <TextView
+        android:id="@+id/lblNameBook"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/list_padding"
+        android:paddingTop="@dimen/list_padding"
+        android:paddingEnd="@dimen/list_padding"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintHorizontal_weight="3"
+        android:textSize="@dimen/list_textSize"
+        app:layout_constraintBottom_toTopOf="@+id/lblAuthor"
+        app:layout_constraintStart_toEndOf="@+id/imgCover"
+        app:layout_constraintEnd_toStartOf="@+id/lblDate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="Título" />
+
+    <TextView
+        android:id="@+id/lblAuthor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/lblNameBook"
+        android:paddingStart="@dimen/list_padding"
+        android:paddingTop="@dimen/list_padding"
+        android:paddingEnd="@dimen/list_padding"
+        app:layout_constraintHorizontal_weight="3"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/list_textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lblDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/imgCover"
+        app:layout_constraintTop_toBottomOf="@+id/lblNameBook"
+        tools:text="Autor" />
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="0sp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/lblNameBook"
+        android:paddingStart="@dimen/list_padding"
+        android:paddingTop="@dimen/list_padding"
+        android:gravity="end"
+        android:paddingEnd="@dimen/list_padding"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/list_textSize"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblAuthor"
+        app:layout_constraintTop_toTopOf="@+id/lblNameBook"
+        tools:text="2005" />
+
+    <ImageView
+        android:id="@+id/imgCover"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/imgCover_descr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lblNameBook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayoutForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imgCover"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/imgCover_descr"
+                    app:layout_constraintDimensionRatio="@string/img_dimenRatio"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/main_margin"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/tilTitle_hint"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:hintTextColor="@color/primary_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCover">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textCapWords"
+                        android:maxLength="30"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="@dimen/list_textSize" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilAuthor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/main_margin"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/tilAuthor_hint"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:hintTextColor="@color/primary_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tilTitle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtAuthor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textCapWords"
+                        android:maxLength="30"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="@dimen/list_textSize" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilYear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/main_margin"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/tilYear_hint"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="4"
+                    app:hintTextColor="@color/primary_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tilAuthor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="@dimen/list_textSize" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilUrl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/main_margin"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/tilsUrl_hint"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="100"
+                    app:hintTextColor="@color/primary_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tilYear">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textUri"
+                        android:maxLength="100"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="@dimen/list_textSize" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilSynopsis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/main_margin"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/tilsSynopsis_hint"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="200"
+                    app:hintTextColor="@color/primary_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tilUrl">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtSynopsis"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textMultiLine"
+                        android:maxLines="8"
+                        android:maxLength="200"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="@dimen/list_textSize" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
+
